@@ -6,20 +6,71 @@
 title: marsco
 subtitle: '一些记录'
 description: '个人博客'
-keywords:
+keywords: "hexo,mars,blog,全栈开发,Aircloud"
 author: Mars Zhang
-language: zh-CN
-timezone: 'Aisa/Shanghai'
+language: zh
+timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: http://marsco.online/blog
 root: /blog/
+#url: http://127.0.0.1/blog/
+#root: /blog/
+
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
+
+# Site settings
+# 网站综合内容设置：
+SEOTitle: AirCloud 日常
+email: 455286976@qq.com
+
+# Build settings
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+sidebar-avatar: img/avatar.jpg
+
+# Friends
+# 友情链接
+friends: [
+    {
+      title: "GitHub",
+      href: "https://github.com/MarsZone"
+    }
+]
+
+comment:
+  type: giscus
+  script: |
+      <script src="https://giscus.app/client.js"
+        data-repo="MarsZone/marsblog"
+        data-repo-id="R_kgDOLPHbug"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOLPHbus4CdC_6"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+      </script>
+
+# The following content is not recommended to modify
+# 搜索数据文件路径设置，不建议改动：
+search:
+  path: search.json
+  field: post
+
+# SNS settings
+# 一些社交平台地址，支持以下几种：
+github_username:    Marszm
 
 # Directory
 source_dir: source
@@ -97,7 +148,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: aircloud
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
