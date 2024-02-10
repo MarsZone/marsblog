@@ -16,7 +16,7 @@ tags:
 
 我发现这种写文章的模式其实也蛮有意思的。比起以前用wordpress，这种方式更符合程序员的思维模式。
 
-本地vscode编辑，甚至还有编辑器插件Typora。然后，hexo g一下，deploy就直接到github上面pull了。然后服务器拉一下就完事。
+本地vscode编辑，甚至还有编辑器插件Typora（其实不是太好用，还是MarkDown更好一些）。然后，hexo g一下，deploy就直接到github上面pull了。然后服务器拉一下就完事。
 
 后面有兴趣的话写个远程调用的小脚本，直接本地调用过去更新远程服务器，就更简单了。
 

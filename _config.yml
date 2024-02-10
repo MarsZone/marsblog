@@ -150,6 +150,11 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: aircloud
 
+analytics:
+  bing:
+    # https://www.bing.com/webmasters
+    site_verification: 512E96788AB243CB1C657957AF3FBA47
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
