@@ -12,7 +12,7 @@
 
     <title>
         
-        近期学习笔记 - AirCloud 日常
+        JVM学习1 - AirCloud 日常
         
     </title>
 
@@ -115,7 +115,7 @@
     </div>
     
         <div id="toc" class="toc-article">
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Java-%E4%BD%93%E7%B3%BB%E7%9F%A5%E8%AF%86"><span class="toc-text">Java 体系知识</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%AB%98%E5%B9%B6%E5%8F%91%E6%9E%B6%E6%9E%84"><span class="toc-text">高并发架构</span></a></li></ol></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#JVM"><span class="toc-text">JVM</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#jvm%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-text">jvm是什么</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Java%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%BB%E8%A6%81%E5%88%86%E4%B8%BA%E4%BA%94%E5%A4%A7%E6%A8%A1%E5%9D%97"><span class="toc-text">Java虚拟机主要分为五大模块</span></a></li></ol></li></ol></li></ol>
 </div>
     
 </div>
@@ -147,15 +147,15 @@
 
 <div class="post-container">
     <div class="post-title">
-        近期学习笔记
+        JVM学习1
     </div>
 
     <div class="post-meta">
-        <span class="attr">发布于：<span>2024-02-08 16:42:59</span></span>
+        <span class="attr">发布于：<span>2024-02-10 22:58:28</span></span>
         
         <span class="attr">标签：/
         
-        <a class="tag" href="/blog/tags/#记录" title="记录">记录</a>
+        <a class="tag" href="/blog/tags/#-Java -Jvm" title="-Java -Jvm">-Java -Jvm</a>
         <span>/</span>
         
         
@@ -165,9 +165,22 @@
 </span>
     </div>
     <div class="post-content ">
-        <p>近期学习的记录</p>
-<h2 id="Java-体系知识"><a href="#Java-体系知识" class="headerlink" title="Java 体系知识"></a><a target="_blank" rel="noopener" href="https://pdai.tech/">Java 体系知识</a></h2><h3 id="高并发架构"><a href="#高并发架构" class="headerlink" title="高并发架构"></a>高并发架构</h3><p>消息队列 0&#x2F;8<br>为什么用消息队列？ 场景是海量并发请求的时候，排队处理。<br>优点，缺点。<br>高可用，重复消费问题，可靠性传输，顺序性，架构设计一个消息队列</p>
-<p>消息队列核心场景，解耦，异步，削峰<br>解耦</p>
+        <h1 id="JVM"><a href="#JVM" class="headerlink" title="JVM"></a>JVM</h1><p>绕不过的话题，肝起来，盘它。<br>喜欢问是吧。</p>
+<p>根据wiki来学</p>
+<h2 id="jvm是什么"><a href="#jvm是什么" class="headerlink" title="jvm是什么"></a>jvm是什么</h2><p>Java virtual machine java的虚拟机。</p>
+<ul>
+<li>一种能够执行Java字节码的虚拟机，以堆栈结构机器来实现。最早由Sun微系统所研发并实现第一个实现版本，是Java平台的一部分，能够执行以Java语言写作的软件程序</li>
+<li>Java虚拟机有自己完善的硬件架构，如处理器、堆栈、寄存器等，还具有相应的指令系统。JVM屏蔽了与具体操作系统平台相关的信息，使得Java程序只需生成在Java虚拟机上运行的目标代码（字节码），就可以在多种平台上不加修改地运行。通过对中央处理器（CPU）所执行的软件实现，实现能执行编译过的Java程序码（Applet与应用程序）。</li>
+<li>作为一种编程语言的虚拟机，实际上不只是专用于Java语言，只要生成的编译文件符合JVM对加载编译文件格式要求，任何语言都可以由JVM编译运行。此外，除了甲骨文公司提供的Java虚拟机，也有其他开源或闭源的实现。</li>
+</ul>
+<p>wiki的知识点也只是简单说下。<br>有个文章讲的比较细<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/214027455">聊到JVM</a></p>
+<h3 id="Java虚拟机主要分为五大模块"><a href="#Java虚拟机主要分为五大模块" class="headerlink" title="Java虚拟机主要分为五大模块"></a>Java虚拟机主要分为五大模块</h3><ol>
+<li>类装载器子系统</li>
+<li>运行时数据区</li>
+<li>执行引擎</li>
+<li>本地方法接口</li>
+<li>垃圾收集模块</li>
+</ol>
 
         
         <br />
