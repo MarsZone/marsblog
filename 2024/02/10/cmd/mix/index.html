@@ -167,6 +167,7 @@
     <div class="post-content ">
         <p>总算找到个能放一堆杂七杂八知识的地方了</p>
 <h1 id="tabs-outliner-删掉所有的Crash"><a href="#tabs-outliner-删掉所有的Crash" class="headerlink" title="tabs outliner 删掉所有的Crash"></a>tabs outliner 删掉所有的Crash</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">let i = 0; let t = setInterval(() =&gt; &#123; let n = treeView.treeModel.currentSession_rootNode.subnodes[i]; if (n.getNodeText().includes(&quot; (crashed &quot;)) &#123; console.log(`Removing node $&#123;n.getNodeText()&#125;`, n); n.removeOwnTreeFromParent(); &#125; else &#123; i++; &#125; if (i == treeView.treeModel.currentSession_rootNode.subnodes.length) &#123; clearInterval(t); &#125; &#125;, 100);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/50862500">git如何避免”warning: LF will be replaced by CRLF“提示？</a><br>最简单办法 git config –global core.autocrlf false</p>
 
         
         <br />
