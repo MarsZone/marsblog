@@ -10,3 +10,5 @@ tags: cmd
 let i = 0; let t = setInterval(() => { let n = treeView.treeModel.currentSession_rootNode.subnodes[i]; if (n.getNodeText().includes(" (crashed ")) { console.log(`Removing node ${n.getNodeText()}`, n); n.removeOwnTreeFromParent(); } else { i++; } if (i == treeView.treeModel.currentSession_rootNode.subnodes.length) { clearInterval(t); } }, 100);
 
 ```
+[git如何避免”warning: LF will be replaced by CRLF“提示？](https://www.zhihu.com/question/50862500)
+最简单办法 git config --global core.autocrlf false

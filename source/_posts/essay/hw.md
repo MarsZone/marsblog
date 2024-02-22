@@ -2,7 +2,7 @@
 title: Hello World
 date: 2024-02-07 10:26:07
 tags:
-    - 随笔
+- 随笔
 ---
 新年新气象。
 

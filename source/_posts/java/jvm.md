@@ -1,8 +1,9 @@
 ---
 title: JVM学习1
 date: 2024-02-10 22:58:28
-tags: - Java
-      - Jvm
+tags: 
+- Java
+- Jvm
 ---
 
 # JVM
