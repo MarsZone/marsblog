@@ -1,19 +1,22 @@
 ---
 layout: "collect"
 title: "我的收藏"
-comments: false
+comments: true
 ---
+
+
 # 网站收藏
 
-## MarkDown使用教程
+- [cloud主题官网](https://github.com/aircloud/hexo-aircloud-blog) [作者的博客](https://niexiaotao.cn/)
+  
+- [Markdown如何使用教程](https://www.jianshu.com/p/ffbf3d120fef)
 
-- Markdown如何使用教程 https://www.jianshu.com/p/ffbf3d120fef
+# JAVA知识
+- [JAVA Guide](https://javaguide.cn/)
+- [Java 体系知识](https://pdai.tech/)
+- [互联网 Java 工程师进阶知识完全扫盲](https://doocs.github.io/)
 
-# 命令大全
+# 算法
+- [LeetCode Wiki](https://doocs.github.io/leetcode/)
 
-#### Hexo
-  * 生成文件 hexo generate
-  * 部署 hexo deploy
-* 写作
-  * hexo new [layout] <title>  layout有三种 post page draft 参数 --path 路径 -r替换
-  * 例子 hexo new post --path essay/log2402 "近期学习笔记"
+
