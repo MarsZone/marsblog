@@ -26,7 +26,7 @@ pretty_urls:
 
 # Site settings
 # 网站综合内容设置：
-SEOTitle: AirCloud 日常
+SEOTitle: Mars blog
 email: 455286976@qq.com
 
 # Build settings
@@ -40,7 +40,11 @@ friends: [
     {
       title: "GitHub",
       href: "https://github.com/MarsZone"
-    }
+    },
+    {
+      title: "stdioa",
+      href: "https://blog.stdioa.com/"
+    },
 ]
 
 comment:

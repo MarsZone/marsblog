@@ -1,7 +1,9 @@
 ---
-title: Ai相关记录
+title: AI相关记录
 date: 2024-02-21 19:10:44
-tags: - AI
+tags: 
+- AI
+- 随笔
 ---
 
 # AI技术相关知识记录

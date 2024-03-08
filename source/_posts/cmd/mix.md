@@ -1,7 +1,9 @@
 ---
-title: 常用命令
+title: 随手记
 date: 2024-02-10 22:33:02
-tags: cmd
+tags: 
+- cmd
+- 随笔
 ---
 总算找到个能放一堆杂七杂八知识的地方了
 
@@ -10,3 +12,35 @@ tags: cmd
 let i = 0; let t = setInterval(() => { let n = treeView.treeModel.currentSession_rootNode.subnodes[i]; if (n.getNodeText().includes(" (crashed ")) { console.log(`Removing node ${n.getNodeText()}`, n); n.removeOwnTreeFromParent(); } else { i++; } if (i == treeView.treeModel.currentSession_rootNode.subnodes.length) { clearInterval(t); } }, 100);
 
 ```
+[git如何避免”warning: LF will be replaced by CRLF“提示？](https://www.zhihu.com/question/50862500)
+最简单办法 git config --global core.autocrlf false
+
+
+[Jenkins+gitlab自动化部署java应用（适合初学者）](https://blog.csdn.net/qq_42933340/article/details/131059727)
+
+私服能做的事情 [某乎](https://www.zhihu.com/question/40854395)
+- 博客
+- 私服
+- ss
+- Nextcloud 私人云盘 部署方式 https://zhuanlan.zhihu.com/p/62987726 https://zhuanlan.zhihu.com/p/31035773
+- frp，树莓派，物联网
+- Emby?看电影
+- uptimeRobot 服务监控
+- netData监控
+
+
+# 一些杂七杂八的玩意
+奥卡姆剃刀原理
+“如无必要，勿增实体” （Entities should not be multiplied unnecessarily）
+Numquam ponenda est pluralitas sine necessitate.（避重趋轻）
+Pluralitas non est ponenda sine necessitate.（避繁逐简）
+Frustra fit per plura quod potest fieri per pauciora.（以简御繁）
+Entia non sunt multiplicanda praeter necessitatem.（避虚就实）
+
+
+
+# 网络安全相关
+
+春秋云镜WP https://github.com/superlink996/chunqiuyunjingbachang?tab=readme-ov-file
+
+各种平台地址 https://www.zhihu.com/question/267204109
