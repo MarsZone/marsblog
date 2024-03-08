@@ -14,3 +14,7 @@ tags:
 hexo new post --path java/jvm "JVM学习1"
 
 hexo new post --path java/architecture "系统架构知识点"
+
+hexo new post --path ai/chartGpt "人工智能学习"
+
+hexo new post --path essay/Git "Git相关知识"
