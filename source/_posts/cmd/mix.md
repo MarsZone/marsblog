@@ -12,3 +12,6 @@ let i = 0; let t = setInterval(() => { let n = treeView.treeModel.currentSession
 ```
 [git如何避免”warning: LF will be replaced by CRLF“提示？](https://www.zhihu.com/question/50862500)
 最简单办法 git config --global core.autocrlf false
+
+
+[Jenkins+gitlab自动化部署java应用（适合初学者）](https://blog.csdn.net/qq_42933340/article/details/131059727)
