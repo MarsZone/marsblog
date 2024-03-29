@@ -18,3 +18,12 @@ hexo new post --path java/architecture "系统架构知识点"
 hexo new post --path ai/chartGpt "人工智能学习"
 
 hexo new post --path essay/Git "Git相关知识"
+
+hexo new post --path essay/web_skill "web技巧"
+
+hexo new post --path kotlin/base "kotlin基本语法"
+
+hexo new post --path Spring/spring-security "Spring-Security6.0"
+
+hexo new post --path web3/base "web3基础了解"
+

@@ -37,10 +37,19 @@ Pluralitas non est ponenda sine necessitate.（避繁逐简）
 Frustra fit per plura quod potest fieri per pauciora.（以简御繁）
 Entia non sunt multiplicanda praeter necessitatem.（避虚就实）
 
+# 书籍
+《写给大家看的设计书》：设计相关
+《点石成金》：Web 用户体验相关
+《鸟哥的Linux私房菜》：Linux 系统相关
+大型网站技术架构 https://e.dangdang.com/pc/reader/index.html?id=1900450642
+Devops https://e.dangdang.com/pc/reader/index.html?id=1901321311
 
+单元测试
 
 # 网络安全相关
 
 春秋云镜WP https://github.com/superlink996/chunqiuyunjingbachang?tab=readme-ov-file
 
 各种平台地址 https://www.zhihu.com/question/267204109
+
+靶场攻略 | 网络安全靶场合集 https://blog.csdn.net/Python_0011/article/details/133759740
