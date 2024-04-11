@@ -27,3 +27,5 @@ hexo new post --path Spring/spring-security "Spring-Security6.0"
 
 hexo new post --path web3/base "web3基础了解"
 
+hexo new post --path web3/solidity "solidity"
+

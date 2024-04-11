@@ -4,9 +4,9 @@ title: "我的收藏"
 comments: true
 ---
 # 网站收藏
-
 - [cloud主题官网](https://github.com/aircloud/hexo-aircloud-blog) [作者的博客](https://niexiaotao.cn/)
 - [Markdown如何使用教程](https://www.jianshu.com/p/ffbf3d120fef)
+- [awesome-spring-boot](https://github.com/ityouknow/awesome-spring-boot)
   
 # 工具网站
 - [去除图片背景的免费网站，使用最新的删除图片背景的 AI 模型 RMBG-v1.4，所有计算都在本地完成，不用上传图片。](https://background-erase.xyz/)
@@ -45,3 +45,5 @@ Java,Jvm
 -[v2ex+电鸭Hire](https://x-hiring.hehehai.cn/)
 
 - [模型网站](https://sketchfab.com/) https://sketchfab.com/3d-models/mclaren-senna-free-ea3e43a6eb004853a87fe9c58422eb96
+
+- [macos开发获利文章](https://notes.alinpanaitiu.com/Costs-of-running-a-macOS-app-studio-business)

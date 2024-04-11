@@ -1,7 +1,7 @@
 ---
 title: web技巧
 date: 2024-03-12 09:04:17
-tags:
+tags: web
 ---
 
 # 拦截

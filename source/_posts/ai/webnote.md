@@ -7,6 +7,10 @@ tags:
 ---
 
 # AI技术相关知识记录
+
+## 教程
+    -[动手实战人工智能 AI By Doing](https://aibydoing.com/intro)
+
 ## GPT 问答
     - https://beta.theb.ai/home 付了费的，钱还没用完
 
@@ -15,3 +19,8 @@ tags:
     - https://discord.com/invite/pika  免费的，内容挺多有点意思
 
 ## 自动写代码
+
+
+# 网站记录
+    - https://github.com/ikaijua/Awesome-AITools
+    - [LLM比较](https://www.bentoml.com/blog/navigating-the-world-of-large-language-models)

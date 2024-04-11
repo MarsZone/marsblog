@@ -208,16 +208,35 @@ public class Generic<T>{
     }
 }
 ```
+泛型类，泛型接口，泛型方法
+自定义接口通用返回结果 CommonResult<T> 通过参数 T 可根据具体的返回类型动态指定结果的数据类型
+构建集合工具类（参考 Collections 中的 sort, binarySearch 方法）。
 
 ### 反射
 
+框架的灵魂，底层原理。赋予了我们在运行时分析类以及执行类中方法的能力
+通过反射你可以获取任意一个类的所有属性和方法，你还可以调用这些方法和属性。
 
+就是根据包名路径，直接获取到一个class，方法名，字段名。还是要newInstance去实例化。
 
 ### 注解
+注解本质是一个继承了Annotation 的特殊接口：
+
+@Target(ElementType.METHOD)
+@Retention(RetentionPolicy.SOURCE)
+public @interface Override {
+}
+public interface Override extends Annotation{
+}
+
 
 ### SPI
 
+SPI 即 Service Provider Interface ，字面意思就是：“服务提供者的接口”，我的理解是：专门提供给服务提供者或者扩展框架功能的开发者去使用的一个接口。
+
 ### 序列化，反序列化
+
+如果我们需要持久化 Java 对象比如将 Java 对象保存在文件中，或者在网络传输 Java 对象，这些场景都需要用到序列化。
 
 ### I/O
 

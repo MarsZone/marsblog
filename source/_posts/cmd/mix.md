@@ -37,6 +37,10 @@ Pluralitas non est ponenda sine necessitate.（避繁逐简）
 Frustra fit per plura quod potest fieri per pauciora.（以简御繁）
 Entia non sunt multiplicanda praeter necessitatem.（避虚就实）
 
+康威定律（Conway Law）
+任何系统的构成，都反映了设计这个系统的组织结构。
+Melvin Conway 观察到，软件系统的架构看起来与构建它的开发团队的组织结构非常相似。
+
 # 书籍
 《写给大家看的设计书》：设计相关
 《点石成金》：Web 用户体验相关
@@ -53,3 +57,13 @@ Devops https://e.dangdang.com/pc/reader/index.html?id=1901321311
 各种平台地址 https://www.zhihu.com/question/267204109
 
 靶场攻略 | 网络安全靶场合集 https://blog.csdn.net/Python_0011/article/details/133759740
+
+工具 How I get there https://how-did-i-get-here.net/
+
+
+## 大型网站技术架构 读书笔记
+小型网站最需要考虑的是活下去，为用户提供好服务创造价值，也蛮生长。
+
+驱动大型网站技术发展的主要力量是网站的业务发展
+
+
