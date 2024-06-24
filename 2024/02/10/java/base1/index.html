@@ -249,8 +249,25 @@
 <p>finally的代码也有可能不执行<br>finally 之前虚拟机被终止运行的话，finally 中的代码就不会被执行。<br>程序所在的线程死亡。<br>关闭 CPU。 </p>
 <h3 id="泛型"><a href="#泛型" class="headerlink" title="泛型"></a>泛型</h3><p>jdk 5引入新特性，<br>泛型类、泛型接口、泛型方法。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">//此处T可以随便写为任意标识，常见的如T、E、K、V等形式的参数常用于表示泛型</span><br><span class="line">//在实例化泛型类时，必须指定T的具体类型</span><br><span class="line">public class Generic&lt;T&gt;&#123;</span><br><span class="line"></span><br><span class="line">    private T key;</span><br><span class="line"></span><br><span class="line">    public Generic(T key) &#123;</span><br><span class="line">        this.key = key;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public T getKey()&#123;</span><br><span class="line">        return key;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="反射"><a href="#反射" class="headerlink" title="反射"></a>反射</h3><h3 id="注解"><a href="#注解" class="headerlink" title="注解"></a>注解</h3><h3 id="SPI"><a href="#SPI" class="headerlink" title="SPI"></a>SPI</h3><h3 id="序列化，反序列化"><a href="#序列化，反序列化" class="headerlink" title="序列化，反序列化"></a>序列化，反序列化</h3><h3 id="I-O"><a href="#I-O" class="headerlink" title="I&#x2F;O"></a>I&#x2F;O</h3><h3 id="语法糖"><a href="#语法糖" class="headerlink" title="语法糖"></a>语法糖</h3><h1 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h1><p><img src="https://oss.javaguide.cn/github/javaguide/java/collection/java-collection-hierarchy.png"></p>
+<p>泛型类，泛型接口，泛型方法<br>自定义接口通用返回结果 CommonResult<T> 通过参数 T 可根据具体的返回类型动态指定结果的数据类型<br>构建集合工具类（参考 Collections 中的 sort, binarySearch 方法）。</p>
+<h3 id="反射"><a href="#反射" class="headerlink" title="反射"></a>反射</h3><p>框架的灵魂，底层原理。赋予了我们在运行时分析类以及执行类中方法的能力<br>通过反射你可以获取任意一个类的所有属性和方法，你还可以调用这些方法和属性。</p>
+<p>就是根据包名路径，直接获取到一个class，方法名，字段名。还是要newInstance去实例化。</p>
+<h3 id="注解"><a href="#注解" class="headerlink" title="注解"></a>注解</h3><p>注解本质是一个继承了Annotation 的特殊接口：</p>
+<p>@Target(ElementType.METHOD)<br>@Retention(RetentionPolicy.SOURCE)<br>public @interface Override {<br>}<br>public interface Override extends Annotation{<br>}</p>
+<h3 id="SPI"><a href="#SPI" class="headerlink" title="SPI"></a>SPI</h3><p>SPI 即 Service Provider Interface ，字面意思就是：“服务提供者的接口”，我的理解是：专门提供给服务提供者或者扩展框架功能的开发者去使用的一个接口。</p>
+<h3 id="序列化，反序列化"><a href="#序列化，反序列化" class="headerlink" title="序列化，反序列化"></a>序列化，反序列化</h3><p>如果我们需要持久化 Java 对象比如将 Java 对象保存在文件中，或者在网络传输 Java 对象，这些场景都需要用到序列化。<br>序列化属于TPC的应用层，OSI的表示层<br>static 均不会被序列化</p>
+<p>JDK 自带的序列化方式一般不会用 ，因为序列化效率低并且存在安全问题。比较常用的序列化协议有 Hessian、Kryo、Protobuf、ProtoStuff，这些都是基于二进制的序列化协议。<br>JAVA序列化，反序列化漏洞，<a target="_blank" rel="noopener" href="https://cryin.github.io/blog/secure-development-java-deserialization-vulnerability/">https://cryin.github.io/blog/secure-development-java-deserialization-vulnerability/</a></p>
+<p>transient 阻止字段序列化</p>
+<h3 id="I-O"><a href="#I-O" class="headerlink" title="I&#x2F;O"></a>I&#x2F;O</h3><p>Java IO 流的 40 多个类都是从如下 4 个抽象类基类中派生出来的。InputStream&#x2F;Reader: 所有的输入流的基类，前者是字节输入流，后者是字符输入流。OutputStream&#x2F;Writer: 所有输出流的基类，前者是字节输出流，后者是字符输出流。<br>常用字符编码所占字节数？utf8 :英文占 1 字节，中文占 3 字节，unicode：任何字符都占 2 个字节，gbk：英文占 1 字节，中文占 2 字节。</p>
+<p>BufferedInputStream 从源头（通常是文件）读取数据（字节信息）到内存的过程中不会一个字节一个字节的读取，而是会先将读取到的字节存放在缓存区，并从内部缓冲区中单独读取字节。这样大幅减少了 IO 次数，提高了读取效率。<br>缓冲区的大小默认为 8192 字节，当然了，你也可以通过 BufferedInputStream(InputStream in, int size) 这个构造方法来指定缓冲区的大小。</p>
+<p>BufferedOutputStream 将数据（字节信息）写入到目的地（通常是文件）的过程中不会一个字节一个字节的写入，而是会先将要写入的字节存放在缓存区，并从内部缓冲区中单独写入字节。这样大幅减少了 IO 次数，提高了读取效率</p>
+<p>BufferedReader （字符缓冲输入流）和 BufferedWriter（字符缓冲输出流）类似于 BufferedInputStream（字节缓冲输入流）和BufferedOutputStream（字节缓冲输入流），内部都维护了一个字节数组作为缓冲区。不过，前者主要是用来操作字符信息。</p>
+<p>System.out 实际是用于获取一个 PrintStream 对象，print方法实际调用的是 PrintStream 对象的 write 方法。</p>
+<p>这里要介绍的随机访问流指的是支持随意跳转到文件的任意位置进行读写的 RandomAccessFile 。</p>
+<p>读写模式主要有下面四种：r : 只读模式。rw: 读写模式rws: 相对于 rw，rws 同步更新对“文件的内容”或“元数据”的修改到外部存储设备。rwd : 相对于 rw，rwd 同步更新对“文件的内容”的修改到外部存储设备。</p>
+<p>RandomAccessFile 比较常见的一个应用就是实现大文件的 断点续传 。何谓断点续传？简单来说就是上传文件中途暂停或失败（比如遇到网络问题）之后，不需要重新上传，只需要上传那些未成功上传的文件分片即可。分片（先将文件切分成多个文件分片）上传是断点续传的基础。</p>
+<h3 id="语法糖"><a href="#语法糖" class="headerlink" title="语法糖"></a>语法糖</h3><p>支持的是编译器而不是JVM<br>Java 中最常用的语法糖主要有泛型、自动拆装箱、变长参数、枚举、内部类、增强 for 循环、try-with-resources 语法、lambda 表达式等。</p>
+<h1 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h1><p><img src="https://oss.javaguide.cn/github/javaguide/java/collection/java-collection-hierarchy.png"></p>
 <p>HashMap通过 jdk1.8以前，数组+链表组成。拉链法解决解决哈希冲突。1.8以后在链表长度大于阈值，默认。的时候转化为红黑树。</p>
 <p>LinkedHashMap继承自HashMap，增加了一条双向链表。</p>
 <p>Hash算法<br>散列算法，从任意文件中创造小的数字的指纹的方法。<br>MD5系列，SHA系列。<br>MD5和SHA1已经被破解，推荐用SHA2-256<br>（彩虹表）<br>哈希碰撞</p>
